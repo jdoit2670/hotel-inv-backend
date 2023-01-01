@@ -55,7 +55,6 @@ app.put("/api/Rooms/:id", (req, res) => {
 
 app.delete("/api/Rooms/:id", (req, res) => {
   roomList.splice(req.params.id - 1, 1);
-  console.log(roomList);
   res.json(roomList);
 });
 
